@@ -1,0 +1,340 @@
+/* Main styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset styles */
+@import url('reset.css');
+
+/* Typography styles */
+@import url('typography.css');
+
+/* Layout styles */
+@import url('layout.css');
+
+/* Custom styles for the blog homepage go here */
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(32, 54, 44);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    text-align: right;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    text-align: right;
+
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* Flexbox component styles */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Card component styles */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card h2 {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 20px;
+    font-size: 1em;
+}
+
+.card .buttons {
+    display: flex;
+    margin: 20px;
+}
+
+.card .button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.card .button:hover {
+    background-color: rgb(147, 112, 187);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% 25%; /* main takes up 75% of the space and sidebar takes up 25% */
+  grid-gap: 0px;
+  grid-column-gap: 20px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  /* border: 1px solid gray;  */
+  /* add a gray border */
+  
+}
+
+article {
+   background-color: #fff;
+    border-radius: 1%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    margin: 1%;
+    width: fit-content;
+    padding: 2%;
+}
+
+.buttonb {
+    display: flex;
+    margin: 10px;
+}
+
+.buttonb a {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.rel-art {
+    display: block;
+    margin: 10px;
+}
+
+.rel-art ul {
+    border: none;
+    list-style-type: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Style for sidebar */
+h2, h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a {
+  color: #00f;
+}
+
+a:hover, a:focus {
+  color: #00f;
+  text-decoration: underline;
+}
+
+/* Pattern - Subscribe Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Author Info Styles */
+.author-info {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.author-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Social Sharing Styles */
+.social-sharing {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-sharing a {
+    margin-right: 10px;
+    margin: 1%;
+    padding: 1%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+Mobile-friendly and responsive design
+
+/* Responsive styles for screens smaller than 600px */
+
+@media (max-width: 768px) {
+    /* Change the layout for smaller screens */
+    .grid-container {
+        grid-template-columns: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        section {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    /* Change the font size for smaller screens */
+    article h1 {
+        font-size: 2rem;
+    }
+    article p {
+        font-size: 1rem;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    } */
+    /* other styles */
+/* } */

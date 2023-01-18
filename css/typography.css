@@ -1,0 +1,28 @@
+/* Add custom font families */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+
+/* Custom typography styles go here */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote {
+  font-style: italic;
+}
