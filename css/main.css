@@ -71,6 +71,7 @@ header a {
 
 .flex-container {
     display: flex;
+    /* display: grid; */
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
@@ -85,7 +86,14 @@ header a {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    /* width: 80vw; */
     width: calc(33.33% - 40px);
+    padding: 2%;
+}
+
+.content {
+  display: grid;
+  width: 100%;
 }
 
 .card img {
@@ -132,9 +140,6 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 70% 25%; /* main takes up 75% of the space and sidebar takes up 25% */
-  grid-gap: 0px;
-  grid-column-gap: 20px;
-    grid-template-columns: 70% 30%;
     grid-template-rows: auto auto;
     grid-column-gap: 20px;
     padding: 20px;
@@ -147,19 +152,9 @@ a {
   
 }
 
-article {
-   background-color: #fff;
-    border-radius: 1%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: grid;
-    margin: 1%;
-    width: fit-content;
-    padding: 2%;
-}
-
 .buttonb {
-    display: flex;
-    margin: 10px;
+    display: block;
+    margin-top: 20px;
 }
 
 .buttonb a {
@@ -174,7 +169,7 @@ article {
 
 .rel-art {
     display: block;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 .rel-art ul {
@@ -289,6 +284,7 @@ form input[type="submit"]:hover {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .social-sharing a {
@@ -297,28 +293,37 @@ form input[type="submit"]:hover {
     padding: 1%;
 }
 
+.sub {
+  justify-content: center;
+  display: flex;
+}
+  section * {
+      width: 100%;
+  }
 /* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    /* position:fixed; */
+    bottom: 0px;
+    width: 100%;
 }
 
 
-Mobile-friendly and responsive design
+/* Mobile-friendly and responsive design */
 
 /* Responsive styles for screens smaller than 600px */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* Change the layout for smaller screens */
     .grid-container {
-        grid-template-columns: 100%;
-        display: flex;
-        flex-wrap: wrap;
+      /* flex-wrap: wrap; */
+      grid-template-columns:none;
     }
-        section {
-        width: 100%;
+    .card {
+      width: auto;
     }
     aside {
         width: 100%;
